@@ -8,6 +8,7 @@ use GuzzleHttp\Psr7\Response;
 class Client
 {
     protected $token;
+    protected $client;
 
     const BASE_URL = 'https://api.tiingo.com/tiingo/';
 
