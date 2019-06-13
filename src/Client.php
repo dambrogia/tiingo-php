@@ -36,7 +36,7 @@ class Client
      */
     public function prices(string $ticker, $options = []): Response
     {
-        $q = $this->params();
+        $q = $this->params($options);
         return $this->request('GET', "daily/{$ticker}/prices?{$q}");
     }
 
